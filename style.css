@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lobster", cursive;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #1f487e;
+}
+form {
+  background-color: #fff;
+  width: 100%;
+  max-width: 720px;
+  padding: 30px;
+  border-radius: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+form header {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  color: #1d3461;
+  margin-bottom: 1.8rem;
+}
+
+form .url-input {
+  margin-top: 30px 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.url-input .title {
+  font-size: 1rem;
+  color: #474747;
+  text-align: center;
+}
+
+.url-input .field {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.url-input .field input {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+  background: #f2f2f9;
+  border-radius: 100px;
+}
+
+form .preview-area {
+  aspect-ratio: 16/9;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 2px dashed #1d3461;
+}
+.preview-area .thumbnail {
+  width: 100%;
+  display: none;
+}
+
+.preview-area .icon {
+  color: #1d3461;
+  font-size: 4rem;
+}
+
+.preview-area span {
+  color: #1d3461;
+  margin-top: 20px;
+}
+
+.preview-area.active .thumbnail {
+  display: flex;
+}
+.preview-area.active .icon,
+.preview-area.active span {
+  display: none;
+}
+
+form .download-btn {
+  height: 53px;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1 rem;
+  font-weight: 500;
+  background-color: #1f487e;
+  border-radius: 100px;
+  margin: 2em 0 1.4em 0;
+  cursor: pointer;
+}
+
+form .download-btn:hover {
+  background-color: #1d3461;
+}
